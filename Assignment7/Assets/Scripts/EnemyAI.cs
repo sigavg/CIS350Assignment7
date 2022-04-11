@@ -24,6 +24,11 @@ public class EnemyAI : MonoBehaviour
     {
         Vector3 lookdir = (player.transform.position - transform.position).normalized;
         erb.AddForce(lookdir * speed);  
+
+        if(transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
     
     
