@@ -37,18 +37,6 @@ public class SpawnManager : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    private void begin()
-    {
-        Time.timeScale = 0;
-        tutorial.enabled = true;
-        while(!Input.GetKeyDown(KeyCode.Space))
-        {
-            if(Input.GetKeyDown(KeyCode.Space))
-            {
-                Time.timeScale = 1;
-            }
-        }
-    }
     private void spawnEnemyWave(int num)
     {
         for (int i = 0; i < num; i++)

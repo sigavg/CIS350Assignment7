@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - SpawnManager
   - PowerUp
+  - Powerup
+  - Playergoal
   layers:
   - Default
   - TransparentFX
